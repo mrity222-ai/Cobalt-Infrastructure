@@ -1,0 +1,214 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg-home",
+      "description": "Panoramic view of a modern bridge and highway infrastructure built by Cobalt Infrastructure at sunset.",
+      "imageUrl": "https://picsum.photos/seed/home-hero/1920/1080",
+      "imageHint": "highway infrastructure"
+    },
+    {
+      "id": "hero-bg-about",
+      "description": "Architectural close-up of a glass and steel skyscraper designed by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "https://picsum.photos/seed/about-hero/1920/1080",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "hero-bg-contact",
+      "description": "Top-down view of a modern urban planning model by Cobalt Infrastructure.",
+      "imageUrl": "https://picsum.photos/seed/contact-hero/1920/1080",
+      "imageHint": "urban planning"
+    },
+    {
+      "id": "hero-bg-projects",
+      "description": "Large-scale construction site managed by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "https://picsum.photos/seed/projects-hero/1920/1080",
+      "imageHint": "construction site"
+    },
+    {
+      "id": "hero-bg-services",
+      "description": "Engineering blueprints for infrastructure projects in Uttar Pradesh.",
+      "imageUrl": "https://picsum.photos/seed/services-hero/1920/1080",
+      "imageHint": "engineering blueprints"
+    },
+    {
+      "id": "hero-engineers",
+      "description": "Professional Cobalt Infrastructure engineers in hard hats discussing project blueprints.",
+      "imageUrl": "https://picsum.photos/seed/hero-eng-cranes/800/1000",
+      "imageHint": "construction site engineers"
+    },
+    {
+      "id": "hero-portrait-1",
+      "description": "Lead engineer at Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "https://picsum.photos/seed/hp1/400/500",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "hero-portrait-2",
+      "description": "Project manager at Cobalt Infrastructure.",
+      "imageUrl": "https://picsum.photos/seed/hp2/400/500",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "hero-portrait-3",
+      "description": "Technical GM at Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "https://picsum.photos/seed/hp3/400/500",
+      "imageHint": "professional person"
+    },
+    {
+      "id": "client-logo-1",
+      "description": "Partner logo 1 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo1/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "client-logo-2",
+      "description": "Partner logo 2 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo2/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "client-logo-3",
+      "description": "Partner logo 3 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo3/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "client-logo-4",
+      "description": "Partner logo 4 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo4/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "client-logo-5",
+      "description": "Partner logo 5 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo5/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "client-logo-6",
+      "description": "Partner logo 6 for Cobalt Infrastructure",
+      "imageUrl": "https://picsum.photos/seed/clogo6/140/70",
+      "imageHint": "abstract logo"
+    },
+    {
+      "id": "feature-video-thumb",
+      "description": "Thumbnail of a Cobalt Infrastructure construction project video.",
+      "imageUrl": "/ab/2.png",
+      "imageHint": "construction video"
+    },
+    {
+      "id": "project-lucknow",
+      "description": "Modern residential complex in Lucknow by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "/pro/4.jpg",
+      "imageHint": "modern building"
+    },
+    {
+      "id": "project-ayodhya",
+      "description": "A grand public infrastructure project in Ayodhya by Cobalt Infrastructure.",
+      "imageUrl": "/pro/10.jpg",
+      "imageHint": "infrastructure project"
+    },
+    {
+      "id": "project-gorakhpur",
+      "description": "Industrial park development in Gorakhpur by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "/pro/34.jpg",
+      "imageHint": "industrial park"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Satisfied client of Cobalt Infrastructure.",
+      "imageUrl": "https://picsum.photos/seed/testi1/100/100",
+      "imageHint": "client portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Business partner of Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "https://picsum.photos/seed/testi2/100/100",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Project investor with Cobalt Infrastructure.",
+      "imageUrl": "https://picsum.photos/seed/testi3/100/100",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "about-trust-engineers",
+      "description": "Three construction engineers from Cobalt Infrastructure Pvt. Ltd. discussing blueprints.",
+      "imageUrl": "/ab/1.png",
+      "imageHint": "construction engineers"
+    },
+    {
+      "id": "project-bahraich",
+      "description": "Lake development project in Bahraich by Cobalt Infrastructure.",
+      "imageUrl": "/pro/21.jpg",
+      "imageHint": "lake landscape"
+    },
+    {
+      "id": "project-mau",
+      "description": "Community hall construction in Mau by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "/pro/16.jpg",
+      "imageHint": "modern hall"
+    },
+    {
+      "id": "project-ayodhya-2",
+      "description": "Heritage renovation project in Ayodhya by Cobalt Infrastructure.",
+      "imageUrl": "/pro/17.jpg",
+      "imageHint": "heritage building"
+    },
+    {
+      "id": "project-vindhyachal",
+      "description": "Ghat construction project in Vindhyachal by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "/pro/22.jpg",
+      "imageHint": "river ghat"
+    },
+    {
+      "id": "project-lucknow-court",
+      "description": "Family court building in Lucknow built by Cobalt Infrastructure.",
+      "imageUrl": "/pro/24.jpg",
+      "imageHint": "court building"
+    },
+    {
+      "id": "company-logo",
+      "description": "Cobalt Infrastructure Pvt. Ltd. Corporate Logo.",
+      "imageUrl": "/pro/logo.png",
+      "imageHint": "minimalist logo"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Structural engineering detail by Cobalt Infrastructure.",
+      "imageUrl": "/pro/9.jpg",
+      "imageHint": "structural engineering"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Modern construction site in Uttar Pradesh.",
+      "imageUrl": "/pro/11.jpg",
+      "imageHint": "modern construction"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Architectural detail of a Cobalt Infrastructure project.",
+      "imageUrl": "/pro/13.jpg",
+      "imageHint": "architectural detail"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Building framework of a premier residential development.",
+      "imageUrl": "/pro/2.jpg",
+      "imageHint": "building framework"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Infrastructure site managed by Cobalt Infrastructure Pvt. Ltd.",
+      "imageUrl": "/pro/32.jpg",
+      "imageHint": "infrastructure site"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Urban development landmark in Lucknow.",
+      "imageUrl": "/pro/10.jpg",
+      "imageHint": "urban development"
+    }
+  ]
+}
