@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -41,6 +40,18 @@ type Project = {
 };
 
 const allProjects: Project[] = [
+    { 
+        name: "State Institute of Hotel Management (Phase-2)", 
+        location: "GIDA, Gorakhpur", 
+        status: "Ongoing", 
+        category: "Government", 
+        imageId: "project-sihm-phase2",
+        year: "2024 - Present",
+        description: "Construction of Phase-2 for the State Institute of Hotel Management at GIDA, Gorakhpur. This expansion project includes advanced training kitchens, hospitality labs, and modern academic wings to enhance hospitality training infrastructure in the region.",
+        technologies: ["Modern RCC Frame", "Advanced Kitchen Ventilation", "Sustainable Design"],
+        features: ["Commercial Grade Labs", "Modern Academic Blocks", "Integrated Campus Design"],
+        stats: [{ label: "Site", value: "GIDA, Gorakhpur" }, { label: "Category", value: "Institutional" }]
+    },
     { 
         name: "528 Bedded Capacity Hostel, MMMUT", 
         location: "Gorakhpur", 

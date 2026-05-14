@@ -215,6 +215,12 @@
       "description": "Construction of 528 Bedded Capacity Hostel in MMMUT Gorakhpur.",
       "imageUrl": "/pro/38.jpeg",
       "imageHint": "highrise building"
+    },
+    {
+      "id": "project-sihm-phase2",
+      "description": "Construction of State Institute of Hotel Management (Phase-2) – GIDA, Gorakhpur.",
+      "imageUrl": "/pro/43.jpeg",
+      "imageHint": "hospitality institute"
     }
   ]
 }
