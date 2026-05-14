@@ -221,6 +221,12 @@
       "description": "Construction of State Institute of Hotel Management (Phase-2) – GIDA, Gorakhpur.",
       "imageUrl": "/pro/43.jpeg",
       "imageHint": "hospitality institute"
+    },
+    {
+      "id": "project-vidhyalaya-mau",
+      "description": "Construction of Chief Minister Composite Vidhyalaya, Madhuban, Mau.",
+      "imageUrl": "/pro/46.jpeg",
+      "imageHint": "school building"
     }
   ]
 }
