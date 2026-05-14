@@ -3,26 +3,37 @@
 
 import { Card } from "@/components/ui/card";
 import { ScrollReveal } from "../scroll-reveal";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, BadgeCheck, Clock, Construction } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
-const completedProjects = [
+const featuredProjects = [
   {
-    title: "State Institute of Hotel Management",
-    location: "Gorakhpur, UP",
-    imageId: "project-gorakhpur",
+    title: "Chief Minister Composite Vidhyalaya",
+    location: "Madhuban, Mau",
+    imageId: "project-vidhyalaya-mau",
+    status: "Ongoing",
+    statusColor: "bg-amber-500",
+    icon: Construction
   },
   {
-    title: "Chittaura Lake & Raja Suhaildev Memorial",
-    location: "Bahraich, UP",
-    imageId: "project-bahraich",
+    title: "Pakka Ghat at Ganga River",
+    location: "Vindhyachal, Mirzapur",
+    imageId: "project-ghat-vindhyachal-new",
+    status: "Almost Complete",
+    statusColor: "bg-cyan-500",
+    icon: Clock
   },
   {
-    title: "Kalyan Mandap Mau",
-    location: "Mau, UP",
-    imageId: "project-mau",
+    title: "State Institute of Hotel Management (Phase-2)",
+    location: "GIDA, Gorakhpur",
+    imageId: "project-sihm-phase2",
+    status: "Ongoing",
+    statusColor: "bg-amber-500",
+    icon: Construction
   }
 ];
 
@@ -32,15 +43,15 @@ export function SisterConcernsSection() {
       <div className="container mx-auto px-6">
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <h2 className="text-[32px] md:text-[48px] font-bold leading-tight tracking-tight text-foreground">
-            Expertly Completed <span className="text-accent">Projects</span>
+            Featured <span className="text-primary italic">Projects</span>
           </h2>
           <p className="mt-6 text-muted-foreground text-[15px] md:text-[18px] font-normal max-w-2xl mx-auto">
-            Explore our diverse portfolio of infrastructure landmarks built with precision and visionary engineering.
+            Showcasing our high-impact infrastructure developments currently shaping the landscape of Uttar Pradesh.
           </p>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {completedProjects.map((project, index) => {
+          {featuredProjects.map((project, index) => {
             const image = PlaceHolderImages.find(img => img.id === project.imageId);
             return (
               <ScrollReveal key={project.title} delay={index * 100} className="w-full h-full">
@@ -56,6 +67,12 @@ export function SisterConcernsSection() {
                       />
                     )}
                     <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/20 transition-colors duration-500"></div>
+                    <div className="absolute top-6 right-6">
+                      <Badge className={cn("text-white border-none px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg", project.statusColor)}>
+                        <project.icon className="w-3 h-3 mr-1.5" />
+                        {project.status}
+                      </Badge>
+                    </div>
                   </div>
 
                   <div className="p-8 flex flex-col flex-grow">
@@ -70,7 +87,7 @@ export function SisterConcernsSection() {
                         href="/projects" 
                         className="text-[13px] font-bold text-foreground group-hover:text-primary flex items-center gap-2 transition-all"
                       >
-                        View Details
+                        View Project Details
                         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </Link>
                     </div>
