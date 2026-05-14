@@ -209,6 +209,12 @@
       "description": "Urban development landmark in Lucknow.",
       "imageUrl": "/pro/10.jpg",
       "imageHint": "urban development"
+    },
+    {
+      "id": "project-mmmut-hostel",
+      "description": "Construction of 528 Bedded Capacity Hostel in MMMUT Gorakhpur.",
+      "imageUrl": "/pro/38.jpeg",
+      "imageHint": "highrise building"
     }
   ]
 }

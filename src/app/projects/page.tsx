@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -40,6 +41,18 @@ type Project = {
 };
 
 const allProjects: Project[] = [
+    { 
+        name: "528 Bedded Capacity Hostel, MMMUT", 
+        location: "Gorakhpur", 
+        status: "Ongoing", 
+        category: "Government", 
+        imageId: "project-mmmut-hostel",
+        year: "2024 - Present",
+        description: "A major residential infrastructure project within the Madan Mohan Malaviya University of Technology (MMMUT) campus. This 528-bedded hostel is designed to meet the growing housing needs of students with modern facilities and robust architectural integrity.",
+        technologies: ["RC Frame Construction", "High-Efficiency MEP", "Sustainable Material Usage"],
+        features: ["528 Bed Capacity", "Student Common Areas", "Modern Kitchen & Dining"],
+        stats: [{ label: "Capacity", value: "528 Beds" }, { label: "Site", value: "MMMUT Campus" }]
+    },
     { 
         name: "State Institute of Hotel Management", 
         location: "Gorakhpur", 
@@ -170,7 +183,7 @@ export default function ProjectsPage() {
     const [filter, setFilter] = useState('All');
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const [mounted, setMounted] = useState(false);
-    const filters = ['All', 'Completed', 'Government', 'Infrastructure'];
+    const filters = ['All', 'Ongoing', 'Completed', 'Government', 'Infrastructure'];
 
     useEffect(() => {
         setMounted(true);
@@ -224,7 +237,10 @@ export default function ProjectsPage() {
                                                 />
                                             )}
                                             <div className="absolute top-5 right-5">
-                                                <Badge className="bg-emerald-500 text-white rounded-full px-4 py-1.5 text-[11px] font-bold border-none shadow-lg">
+                                                <Badge className={cn(
+                                                    "text-white rounded-full px-4 py-1.5 text-[11px] font-bold border-none shadow-lg",
+                                                    project.status === "Ongoing" ? "bg-amber-500" : "bg-emerald-500"
+                                                )}>
                                                     {project.status}
                                                 </Badge>
                                             </div>
