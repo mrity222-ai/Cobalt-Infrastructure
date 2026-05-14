@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -41,6 +40,18 @@ type Project = {
 };
 
 const allProjects: Project[] = [
+    { 
+        name: "Pakka Ghat at Ganga River, Vindhyachal", 
+        location: "Vindhyachal, Ganga River", 
+        status: "Almost Complete", 
+        category: "Infrastructure", 
+        imageId: "project-ghat-vindhyachal-new",
+        year: "2024 - Almost Complete",
+        description: "Construction of Pakka Ghat at Ganga River, Vindhyachal, Mirzapur. This project focuses on enhancing the riverfront with durable ghats, providing safe access for pilgrims and tourists while preserving the sacred atmosphere of the region.",
+        technologies: ["Riverbank Engineering", "RCC Structure", "Anti-Corrosive Materials"],
+        features: ["Pilgrim Bathing Areas", "Flood Resistant Design", "Public Amenities"],
+        stats: [{ label: "Site", value: "Vindhyachal" }, { label: "Status", value: "Almost Complete" }]
+    },
     { 
         name: "Chief Minister Composite Vidhyalaya", 
         location: "Madhuban, Mau", 
@@ -207,7 +218,7 @@ export default function ProjectsPage() {
     const [filter, setFilter] = useState('All');
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const [mounted, setMounted] = useState(false);
-    const filters = ['All', 'Ongoing', 'Completed', 'Government', 'Infrastructure'];
+    const filters = ['All', 'Ongoing', 'Almost Complete', 'Completed', 'Government', 'Infrastructure'];
 
     useEffect(() => {
         setMounted(true);
@@ -263,7 +274,9 @@ export default function ProjectsPage() {
                                             <div className="absolute top-5 right-5">
                                                 <Badge className={cn(
                                                     "text-white rounded-full px-4 py-1.5 text-[11px] font-bold border-none shadow-lg",
-                                                    project.status === "Ongoing" ? "bg-amber-500" : "bg-emerald-500"
+                                                    project.status === "Ongoing" ? "bg-amber-500" : 
+                                                    project.status === "Almost Complete" ? "bg-cyan-500" :
+                                                    "bg-emerald-500"
                                                 )}>
                                                     {project.status}
                                                 </Badge>
@@ -275,7 +288,7 @@ export default function ProjectsPage() {
                                                     <h3 className="text-[22px] font-normal text-[#1E293B] group-hover:text-primary transition-colors leading-tight">{project.name}</h3>
                                                     <p className="flex items-center text-[#64748B] text-[14px] font-normal">
                                                         <MapPin className="h-4 w-4 mr-2 text-primary" />
-                                                        {project.location}, UP
+                                                        {project.location}
                                                     </p>
                                                 </div>
                                             </div>
