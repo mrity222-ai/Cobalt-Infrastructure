@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -29,12 +30,27 @@ const galleryImages = [
   { id: "project-bahraich", category: "Public Works", title: "Lakefront View" },
   { id: "project-mau", category: "Public Works", title: "Community Hall" },
   { id: "project-vindhyachal", category: "Infrastructure", title: "River Access" },
+  { id: "project-mmmut-hostel", category: "Infrastructure", title: "MMMUT Hostel View" },
+  { id: "gallery-39", category: "Industrial", title: "Foundation Engineering" },
+  { id: "gallery-40", category: "Infrastructure", title: "Structural Steelwork" },
+  { id: "gallery-41", category: "Residential", title: "Scaffolding Precision" },
+  { id: "gallery-42", category: "Public Works", title: "Institutional Progress" },
+  { id: "project-sihm-phase2", category: "Public Works", title: "SIHM Phase-2 Site" },
+  { id: "gallery-44", category: "Infrastructure", title: "Land Clearing" },
+  { id: "gallery-45", category: "Industrial", title: "Concrete Slab Work" },
+  { id: "gallery-46", category: "Infrastructure", title: "Public Works Framework" },
+  { id: "gallery-47", category: "Public Works", title: "Site Landscaping" },
+  { id: "gallery-48", category: "Industrial", title: "Industrial Flooring" },
+  { id: "gallery-49", category: "Infrastructure", title: "High-Rise Safety" },
+  { id: "gallery-50", category: "Public Works", title: "Civic Completion" },
+  { id: "project-ghat-vindhyachal-new", category: "Infrastructure", title: "Vindhyachal Ghat" },
+  { id: "gallery-52", category: "Infrastructure", title: "Night Operations" },
+  { id: "project-vidhyalaya-mau", category: "Public Works", title: "CM Composite Vidhyalaya" },
 ];
 
 const GalleryHero = () => {
   return (
     <section className="relative pt-32 md:pt-48 pb-20 min-h-[50vh] flex items-center justify-center text-center overflow-hidden w-full">
-      {/* Premium SaaS Background Effects (Synced with Contact Hero) */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_#fffcf0_0%,_#fff5ed_40%,_#fdf2f8_100%)]"></div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:32px_32px]"></div>
@@ -82,7 +98,6 @@ export default function GalleryPage() {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
-          {/* Filters */}
           <div className="flex items-center justify-center gap-3 overflow-x-auto no-scrollbar py-4 mb-16">
             {galleryCategories.map(cat => (
               <Button
@@ -99,7 +114,6 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredImages.map((img, index) => {
               const imageData = PlaceHolderImages.find(p => p.id === img.id);
@@ -132,7 +146,6 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Lightbox Dialog */}
       <Dialog open={!!selectedImage} onOpenChange={(open) => !open && setSelectedImage(null)}>
         <DialogContent className="max-w-6xl p-0 overflow-hidden border-none bg-black/90 backdrop-blur-xl">
           <DialogHeader className="sr-only">
