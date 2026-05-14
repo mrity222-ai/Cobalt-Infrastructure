@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -43,15 +42,15 @@ type Project = {
 const allProjects: Project[] = [
     { 
         name: "Construction of Chief Minister Composite Vidhyalaya", 
-        location: "Madhuban, Mau", 
+        location: "Mau", 
         status: "Ongoing", 
         category: "Government", 
-        imageId: "project-vidhyalaya-mau-53",
+        imageId: "project-vidhyalaya-mau",
         year: "2024 - Present",
         description: "Ongoing construction of Chief Minister Composite Vidhyalaya at Madhuban, Mau. This prestigious educational project aims to provide state-of-the-art facilities for primary and secondary education, featuring modern classrooms, laboratories, and integrated sports facilities to uplift the educational landscape of the region.",
         technologies: ["Sustainable Design", "Modern RCC Structure", "Pre-fabricated Elements"],
         features: ["Modern Classrooms", "Integrated Sports Complex", "Advanced Labs"],
-        stats: [{ label: "Site", value: "Madhuban, Mau" }, { label: "Category", value: "Educational" }]
+        stats: [{ label: "Site", value: "Mau" }, { label: "Category", value: "Educational" }]
     },
     { 
         name: "Pakka Ghat at Ganga River, Vindhyachal", 
