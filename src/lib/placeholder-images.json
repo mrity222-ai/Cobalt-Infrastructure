@@ -229,6 +229,12 @@
       "imageHint": "school building"
     },
     {
+      "id": "project-vidhyalaya-mau-53",
+      "description": "Ongoing construction of Chief Minister Composite Vidhyalaya in Mau.",
+      "imageUrl": "/pro/53.jpeg",
+      "imageHint": "educational building"
+    },
+    {
       "id": "project-ghat-vindhyachal-new",
       "description": "Construction of Pakka Ghat at Ganga River, Vindhyachal, Mirzapur.",
       "imageUrl": "/pro/51.jpeg",
