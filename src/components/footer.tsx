@@ -22,13 +22,6 @@ const companyLinks = [
   { href: "/contact", label: "Contact Us" },
 ];
 
-const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-];
-
 export function Footer() {
   const logoImage = PlaceHolderImages.find(img => img.id === 'company-logo');
 
@@ -57,18 +50,6 @@ export function Footer() {
               <p className="text-white/50 leading-relaxed text-[15px] max-w-sm font-medium">
                 Cobalt Infrastructure Pvt. Ltd. is redefining modern infrastructure with visionary engineering and premium design solutions in Uttar Pradesh.
               </p>
-            </div>
-            <div className="flex items-center gap-4">
-              {socialLinks.map((social) => (
-                <Link 
-                  key={social.label} 
-                  href={social.href} 
-                  className="h-10 w-10 flex items-center justify-center rounded-lg border border-white/10 text-white/40 hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-500"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-5 w-5" />
-                </Link>
-              ))}
             </div>
           </ScrollReveal>
 
