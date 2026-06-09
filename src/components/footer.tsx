@@ -110,7 +110,7 @@ export function Footer() {
               © 2024 Cobalt Infrastructure Pvt. Ltd. | All Rights Reserved.
             </p>
             <p className="text-white/20 text-[10px] uppercase tracking-[0.3em] font-bold">
-              Website Design by <a href="https://itlc.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">ITLC INDIA PVT LTD</a>
+              Website Design by <a href="https://www.itlcindia.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">ITLC INDIA PVT LTD</a>
             </p>
           </div>
           <div className="flex items-center gap-8">
