@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { ScrollReveal } from './scroll-reveal';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -105,9 +105,14 @@ export function Footer() {
         </div>
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-white/20 text-[11px] uppercase tracking-[0.4em] font-bold">
-            © 2024 Cobalt Infrastructure Pvt. Ltd. | All Rights Reserved.
-          </p>
+          <div className="space-y-2 text-center md:text-left">
+            <p className="text-white/20 text-[11px] uppercase tracking-[0.4em] font-bold">
+              © 2024 Cobalt Infrastructure Pvt. Ltd. | All Rights Reserved.
+            </p>
+            <p className="text-white/20 text-[10px] uppercase tracking-[0.3em] font-bold">
+              Website Design by <a href="https://itlc.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">ITLC INDIA PVT LTD</a>
+            </p>
+          </div>
           <div className="flex items-center gap-8">
              <Link href="#" className="text-white/20 hover:text-white/50 text-[11px] uppercase tracking-widest transition-colors font-bold">Privacy Policy</Link>
              <Link href="#" className="text-white/20 hover:text-white/50 text-[11px] uppercase tracking-widest transition-colors font-bold">Terms of Service</Link>
