@@ -163,7 +163,7 @@ const allProjects: Project[] = [
     { 
         name: "Family Court Lucknow", 
         location: "Lucknow", 
-        status: "Completed", 
+        status: "Ongoing", 
         category: "Government", 
         imageId: "project-lucknow-court",
         year: "2024",
